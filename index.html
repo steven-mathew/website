@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+      <meta name="description" content="Steven Mathew - Budding Computer Scientist from Canada."/>
+      <meta property="og:description" content="Steven Mathew - Budding Computer Scientist from Canada." />
+      <meta property="og:image" name="thumb" content="../website/assets/images/web-image.jpg"/>
+      <meta property="og:title" content="Steven Mathew - Personal Portfolio"/>
+      <meta property="og:type" content="movie" />
+      <meta property="og:url" content="index.html"/>
+      <meta property="og:site_name" content="Steven Mathew - Personal Portfolio"/>
+      <title>Steven Mathew</title>
+      <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="build/styles.css" />
+      <link rel="canonical" href="index.html" />
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script src="build/t.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+	  <script src="build/tippy.js"></script>
+   </head>
+   <body>
+      <div id="App-main" class="App u-fullParent overlay loading">
+         <div class="Content">
+            <div class="scanlines"></div>
+            <div id="emoji">👋</div>
+            <div id="intro"><span class="Staggera"> Hi, I'm Steven Mathew! I'm a budding<br>Computer Scientist from Canada.<br>I ❤</span></div>
+			<div id="intro-love"><span class="Stagger"><del style="text-decoration: none;">software development.<ins>1.5</ins></del><del style="text-decoration: none;">competitive programming.<ins>1.5</ins></del><ins>1.5</ins><del style="text-decoration: none;">math.</del><ins>1.5</ins></span></div>
+			
+			<label class="Stagger" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">who i am</label> 
+            <div class="Stagger" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">I'm a high school student in Grade 12 </div> 
+		            <div class="Stagger" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">interested in large scale distributed algorithms, ML and AI.</div> 
+
+            <label class="Stagger">projects</label> 
+    			
+			<ul>
+				<button class="Stagger tippy" title="A simple, light-weight programming based in Python"><a class="Disabled"><span>eden</span></a></button>
+				<button class="Stagger tippy" title="Repository of all my competitive programming work"><a href="https://github.com/steven-mathew/contest-problems" target="_blank" class="Disabled"><span>Competitive Programming</span></a></button>
+				<button class="Stagger tippy" title="A.I. using Minimax and Alpha-Beta Pruning"><a href="https://github.com/steven-mathew/Othello-JavaFX" target="_blank" class="Disabled"><span>Othello with A.I.</span></a></button>
+				<button class="Stagger tippy" title="A Zelda remake in Java Swing"><a href="https://github.com/steven-mathew/zelda-java" target="_blank" class="Disabled"><span>Zelda</span></a></button>
+				<button class="Stagger tippy" title="A Street Fighter remake in Java Swing"><a href="https://github.com/steven-mathew/street-fighter-java" target="_blank" class="Disabled"><span>Street Fighter</span></a></button>
+				<button class="Stagger tippy" title="Spatial training for patients with cognitive disorders"><a href="https://github.com/steven-mathew/Spatio-HTN-submission" target="_blank" class="Disabled"><span>Spatio</span></a></button>
+			<ul>
+
+            <label class="Stagger" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">contact</label> 
+            <div class="Stagger" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"> Reach out to me by <a href="mailto:stevenmathew1@hotmail.com">email</a></div>
+         </div>
+      </div>
+      <noscript>You need to enable JavaScript to run this app.</noscript>  
+    <script>
+		new Tippy('.tippy', { followCursor: true, position: 'right', duration: 0 })
+    </script>
+	
+   <script>
+      var i = 1;                     
+      var lim = 100;
+
+      window.addEventListener("load", function () {
+
+      function loop() {           
+         setTimeout(function () {    
+            i = Math.floor(Math.random() * 20);
+            // var n = Math.floor(Math.random() * 10);
+            console.log(i);
+
+
+            const loader = document.querySelector(".Stagger:nth-child(" + i + ")") || "";
+            loader.className += " hidden"; 
+
+            if (i < lim) {
+               loop();            
+            }                       
+         }, Math.random() * 100)
+      }
+
+         loop(); 
+
+   });
+   </script>
+
+   <script>	
+		var emojis = ["👋","❤️","🍇","🍈","🍉","🍊","🍋","🍌","🍍","🍎","🍏","🍐","🍑","🍒","🍓",
+      "😺","😸","😹","😻","😼","😽","🙀","😿","😾","🙈","🙉","🐵","🐒","🦍","🐶","🐕","🐩","🐺","🦊","🐱","🐈","🦁","🐯","🐅","🐆","🐴","🐎","🦄","🦌","🐮","🐂","🐃","🐄","🐷","🐖","🐗","🐽","🐏","🐑","🐐","🐪","🐫","🐘","🦏","🐹","🐰","🐇","🐿","🐻","🐨","🐼","🐾","🦃","🐔","🐓","🐣","🐤","🐥","🐦","🐧","🦅","🦆","🦉","🐸","🐊","🐢","🐲","🐉","🐳","🐬","🐟","🐠","🐡","🦈","🐙","🐚","🦀","🦐","🦑","🐌","🦋","✌","😂","😝","😁","😱","👉","🙌","🍻","🔥","🌈","☀","🎈","🌹","💄","🎀","⚽","🎾","🏁","😡","👿","🐻","🐶","🐬","🐟","🍀","👀","🚗","🍎","💝","💙","👌","❤","😍","😉","😓","😳","💪","💩","🍸","🔑","💖","🌟","🎉","🌺","🎶","👠","🏈","⚾","🏆","👽","💀","🐵","🐮","🐩","🐎","💣","👃","👂","🍓","💘","💜","👊","💋","😘","😜","😵","🙏","👋","🚽","💃","💎","🚀","🌙","🎁","⛄","🌊","⛵","🏀","🎱","💰","👶","👸","🐰","🐷","🐍","🐫","🔫","👄","🚲","🍉","💛","💚","🎹","✎"];
+
+		var scrollTime = 0.9;			//Scroll time
+		var scrollDistance = 90;
+
+		$('#App-main').bind('mousewheel', function(e){
+
+			var idx = Math.floor(Math.random() * emojis.length);
+		 
+			document.getElementById("emoji").innerHTML = emojis[idx];
+			
+			var delta = e.originalEvent.wheelDelta/120 || -e.originalEvent.detail/3;
+			var scrollTop = $('#App-main').scrollTop();
+			var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+			
+			TweenMax.to($('#App-main'), scrollTime, {
+
+			scrollTo : { y: finalScroll },
+				ease: Power4.easeOut,	
+				autoKill: true,
+				overwrite: 5
+			});
+		 });
+	  </script>
+      <script>  
+         $('#intro-love').t({
+            mistype: 12,
+            caret:'<span style="color:rgb(96,96,254);">•</span>',
+            repeat: true,
+            typing:function(elm,chr) {
+         
+            document.getElementById("intro-love").setAttribute('cont-str', "software development.");
+
+
+         }
+      });
+      </script> 
+   </body>
+</html>
