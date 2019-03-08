@@ -45,9 +45,8 @@
 				<button class="Stagger tippy" title="Spatial training for patients with cognitive disorders"><a href="https://github.com/steven-mathew/Spatio-HTN-submission" target="_blank" class="Disabled"><span>Spatio</span></a></button>
 			<ul>
 
-				
             <label class="Stagger" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">contact</label> 
-<div class="Stagger title="stevenmathew1@hotmail.com"> Reach out to me by <a href="mailto:stevenmathew1@hotmail.com" target="_blank" class="Disabled">email</a></div>
+            <div class="Stagger tippy title="stevenmathew1@hotmail.com"> Reach out to me by <a href="mailto:stevenmathew1@hotmail.com" target="_blank" class="Disabled">email</a></div>
          </div>
       </div>
       <noscript>You need to enable JavaScript to run this app.</noscript>  
@@ -58,39 +57,28 @@
    <script>
       var i = 1;                     
       var lim = 100;
-
       window.addEventListener("load", function () {
-
       function loop() {           
          setTimeout(function () {    
             i = Math.floor(Math.random() * 20);
             // var n = Math.floor(Math.random() * 10);
             console.log(i);
-
-
             const loader = document.querySelector(".Stagger:nth-child(" + i + ")") || "";
             loader.className += " hidden"; 
-
             if (i < lim) {
                loop();            
             }                       
          }, Math.random() * 100)
       }
-
          loop(); 
-
    });
    </script>
-
    <script>	
 		var emojis = ["👋","❤️","🍇","🍈","🍉","🍊","🍋","🍌","🍍","🍎","🍏","🍐","🍑","🍒","🍓",
       "😺","😸","😹","😻","😼","😽","🙀","😿","😾","🙈","🙉","🐵","🐒","🦍","🐶","🐕","🐩","🐺","🦊","🐱","🐈","🦁","🐯","🐅","🐆","🐴","🐎","🦄","🦌","🐮","🐂","🐃","🐄","🐷","🐖","🐗","🐽","🐏","🐑","🐐","🐪","🐫","🐘","🦏","🐹","🐰","🐇","🐿","🐻","🐨","🐼","🐾","🦃","🐔","🐓","🐣","🐤","🐥","🐦","🐧","🦅","🦆","🦉","🐸","🐊","🐢","🐲","🐉","🐳","🐬","🐟","🐠","🐡","🦈","🐙","🐚","🦀","🦐","🦑","🐌","🦋","✌","😂","😝","😁","😱","👉","🙌","🍻","🔥","🌈","☀","🎈","🌹","💄","🎀","⚽","🎾","🏁","😡","👿","🐻","🐶","🐬","🐟","🍀","👀","🚗","🍎","💝","💙","👌","❤","😍","😉","😓","😳","💪","💩","🍸","🔑","💖","🌟","🎉","🌺","🎶","👠","🏈","⚾","🏆","👽","💀","🐵","🐮","🐩","🐎","💣","👃","👂","🍓","💘","💜","👊","💋","😘","😜","😵","🙏","👋","🚽","💃","💎","🚀","🌙","🎁","⛄","🌊","⛵","🏀","🎱","💰","👶","👸","🐰","🐷","🐍","🐫","🔫","👄","🚲","🍉","💛","💚","🎹","✎"];
-
 		var scrollTime = 0.9;			//Scroll time
 		var scrollDistance = 90;
-
 		$('#App-main').bind('mousewheel', function(e){
-
 			var idx = Math.floor(Math.random() * emojis.length);
 		 
 			document.getElementById("emoji").innerHTML = emojis[idx];
@@ -100,7 +88,6 @@
 			var finalScroll = scrollTop - parseInt(delta*scrollDistance);
 			
 			TweenMax.to($('#App-main'), scrollTime, {
-
 			scrollTo : { y: finalScroll },
 				ease: Power4.easeOut,	
 				autoKill: true,
@@ -116,8 +103,6 @@
             typing:function(elm,chr) {
          
             document.getElementById("intro-love").setAttribute('cont-str', "software development.");
-
-
          }
       });
       </script> 
