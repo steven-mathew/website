@@ -440,7 +440,6 @@ p a {
 	transform: scale(4);
 }
 
-
 .overlay:before {
     animation: grain 1s steps(10) infinite;
     background-image: /*url(../assets/images/grains.png);*/ url(http://api.thumbr.it/whitenoise-361x370.png?background=000000ff&noise=ffffff&density=61&opacity=11);
