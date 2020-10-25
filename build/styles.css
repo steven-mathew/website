@@ -441,7 +441,7 @@ p a {
 
 .overlay:before {
     animation: grain 1s steps(10) infinite;
-    background-color: #000; /*url(http://api.thumbr.it/whitenoise-361x370.png?background=000000ff&noise=ffffff&density=61&opacity=11);*/
+    background-image: #000; /*url(http://api.thumbr.it/whitenoise-361x370.png?background=000000ff&noise=ffffff&density=61&opacity=11);*/
     content: "";
     height: 302%;
     left: -45%;
